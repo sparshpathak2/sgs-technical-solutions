@@ -274,7 +274,7 @@ export default function ProductsPageClient() {
                                     // className="grid grid-cols-1 sm:grid-col-3 border border-gray-200 shadow-sm overflow-hidden"
                                     >
                                         {/* <div className="w-full sm:w-1/3"> */}
-                                        <div className="w-full">
+                                        <div className="w-full h-56">
                                             <Image
                                                 src={product.images[0]}
                                                 alt={product.name}

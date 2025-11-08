@@ -111,25 +111,28 @@ export default function Navbar() {
                                 <DropdownMenuSubContent className="w-44">
                                     <DropdownMenuGroup>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Laminate">Cleanroom Partitions</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Cleanroom+Partitions">Cleanroom Partitions</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Veneer">Lab Furniture</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Lab+Furniture">Lab Furniture</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Flooring</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Flooring">Flooring</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Cleanroom Equipment</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Cleanroom+Equipment">Cleanroom Equipment</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Building Management System</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Building+Management+System">Building Management System</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Office Partitions</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Qualification+And+Validations">Qualification & Validations</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Utilities & Piping</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Office+Partitions">Office Partitions</Link>
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem asChild>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Utilities+%26+Piping">Utilities & Piping</Link>
                                         </DropdownMenuItem>
                                     </DropdownMenuGroup>
 
@@ -143,16 +146,16 @@ export default function Navbar() {
                                 <DropdownMenuSubContent className="w-44">
                                     <DropdownMenuGroup>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Laminate">Kitchens</Link>
+                                            <Link href="/products">Kitchens</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Veneer">Wardrobes</Link>
+                                            <Link href="/products">Wardrobes</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">TV Units</Link>
+                                            <Link href="/products">TV Units</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish">Bathrooms</Link>
+                                            <Link href="/products">Bathrooms</Link>
                                         </DropdownMenuItem>
                                     </DropdownMenuGroup>
 
