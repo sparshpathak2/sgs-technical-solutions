@@ -19,49 +19,49 @@ const products = [
     title: "Modular Cleanroom Partitions",
     description:
       "Precision-engineered partitions that ensure controlled environments with seamless modular design.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Metal Doorsets",
     description:
       "High-strength metal doors crafted for durability, safety, and sleek architectural appeal.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Cleanroom Equipment",
     description:
       "Advanced equipment designed to maintain hygiene, efficiency, and contamination control.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Office Partitions",
     description:
       "Smart, space-efficient partition systems that enhance privacy and modern office aesthetics.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Lab Furniture",
     description:
       "Ergonomic, chemical-resistant lab furniture built for performance and precision.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Modular Kitchens",
     description:
       "Elegant and functional kitchen solutions customized for style and convenience.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Modular Wardrobe Furniture",
     description:
       "Space-optimized wardrobe systems tailored for modern living.",
-    href: "/models",
+    href: "/",
   },
   {
     title: "Fire Doors",
     description:
       "Certified fire-rated doors designed to protect life and property with proven reliability.",
-    href: "/models",
+    href: "/",
   },
 ];
 
@@ -204,55 +204,6 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      {/* <div className="flex flex-col sm:flex-row bg-white px-4 sm:p-28">
-
-        <div className="flex flex-col w-full sm:w-1/2 gap-7">
-
-          <div className="flex flex-col gap-4">
-            <div className="text-red-500 text-md">ABOUT US</div>
-            <div className={`${libre.className} font-semibold text-2xl md:text-3xl`}>
-              Driven by Trust, Defined by Excellence.
-            </div>
-          </div>
-
-          <div className="h-auto sm:h-full">
-            <Image
-              width={400}
-              height={400}
-              alt="anniversary"
-              src="/about-image-1.webp"
-              className="w-full h-full object-cover object-left"
-            />
-          </div>
-        </div>
-
-
-        <div className="flex w-full sm:w-1/2 flex-col gap-4 px-4 sm:px-12 justify-between relative">
-          <div className="flex flex-col gap-3 text-gray-700 leading-relaxed">
-            <p>
-              Vipul Motors – Driven by Trust, Defined by Service.
-            </p>
-            <p>
-              Established in 1987, Vipul Motors is a leading and trusted dealership of Maruti Suzuki,
-              known for delivering outstanding customer experiences across every touchpoint. With a legacy
-              of over three decades, we have built our reputation on the pillars of honesty, commitment,
-              and customer-first thinking.
-            </p>
-            <p>
-              Our growing footprint includes 19 showrooms and 30 workshops strategically located across
-              Delhi, Noida, Gurgaon, Faridabad, Jaipur, Dausa, and Bikaner. We proudly represent the full
-              Maruti Suzuki portfolio—Arena, Nexa, True Value, and Service—ensuring that every customer
-              finds the right car and continued care throughout their ownership journey.
-            </p>
-          </div>
-
-          <Button className="w-fit mt-4">
-            Read more
-            <ArrowRightIcon />
-          </Button>
-        </div>
-      </div> */}
-
       <div className="flex w-full justify-center bg-white px-4 py-8 sm:py-20 sm:px-28">
         <div className="flex flex-col sm:flex-row items-stretch gap-4 sm:gap-0 max-w-7xl">
 

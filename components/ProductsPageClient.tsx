@@ -38,20 +38,40 @@ export default function ProductsPageClient() {
     // }, {} as Record<string, Record<string, Record<string, number>>>)
 
     // 🔹 Build filters tree
+    // const filters = useMemo(() => {
+    //     return products.reduce((acc, curr) => {
+    //         const { category, subCategory, subSubCategory } = curr
+    //         if (!category || !subCategory || !subSubCategory) return acc
+
+    //         if (!acc[category]) acc[category] = {}
+    //         if (!acc[category][subCategory]) acc[category][subCategory] = {}
+    //         if (!acc[category][subCategory][subSubCategory])
+    //             acc[category][subCategory][subSubCategory] = 1
+    //         else acc[category][subCategory][subSubCategory]++
+
+    //         return acc
+    //     }, {} as Record<string, Record<string, Record<string, number>>>)
+    // }, [])
+
     const filters = useMemo(() => {
         return products.reduce((acc, curr) => {
             const { category, subCategory, subSubCategory } = curr
-            if (!category || !subCategory || !subSubCategory) return acc
+
+            if (!category) return acc // Category is mandatory
+            const subCatKey = subCategory || "" // allow empty
+            const subSubCatKey = subSubCategory || "" // allow empty
 
             if (!acc[category]) acc[category] = {}
-            if (!acc[category][subCategory]) acc[category][subCategory] = {}
-            if (!acc[category][subCategory][subSubCategory])
-                acc[category][subCategory][subSubCategory] = 1
-            else acc[category][subCategory][subSubCategory]++
+            if (!acc[category][subCatKey]) acc[category][subCatKey] = {}
+            if (!acc[category][subCatKey][subSubCatKey])
+                acc[category][subCatKey][subSubCatKey] = 1
+            else acc[category][subCatKey][subSubCatKey]++
 
             return acc
         }, {} as Record<string, Record<string, Record<string, number>>>)
     }, [])
+
+
 
 
     // 🔹 Apply filters
@@ -67,11 +87,10 @@ export default function ProductsPageClient() {
     // 🔹 Read filters from URL
     const selectedFilter = useMemo(() => {
         const category = searchParams.get('category')
-        const subCategory = searchParams.get('subCategory')
-        const subSubCategory = searchParams.get('subSubCategory')
+        const subCategory = searchParams.get('subCategory') || ''  // default empty
+        const subSubCategory = searchParams.get('subSubCategory') || ''  // default empty
 
-        if (category && subCategory && subSubCategory)
-            return { category, subCategory, subSubCategory }
+        if (category) return { category, subCategory, subSubCategory }
 
         return null
     }, [searchParams])
@@ -79,13 +98,21 @@ export default function ProductsPageClient() {
     // 🔹 Apply filters
     const filteredProducts = useMemo(() => {
         if (!selectedFilter) return products
-        return products.filter(
-            (p) =>
-                p.category === selectedFilter.category &&
-                p.subCategory === selectedFilter.subCategory &&
-                p.subSubCategory === selectedFilter.subSubCategory
-        )
+
+        return products.filter((p) => {
+            // Category must always match
+            if (p.category !== selectedFilter.category) return false
+
+            // Only filter by subCategory if it's non-empty
+            if (selectedFilter.subCategory && p.subCategory !== selectedFilter.subCategory) return false
+
+            // Only filter by subSubCategory if it's non-empty
+            if (selectedFilter.subSubCategory && p.subSubCategory !== selectedFilter.subSubCategory) return false
+
+            return true
+        })
     }, [selectedFilter])
+
 
     // 🔹 Handle filter change
     const handleFilterSelect = (category: string, subCategory: string, subSubCategory: string) => {
@@ -138,8 +165,10 @@ export default function ProductsPageClient() {
                                         <div className="flex flex-col gap-3 py-2 px-3 bg-white">
                                             {Object.entries(subCategories).map(([subCategory, subSubs]) => (
                                                 <div key={subCategory}>
-                                                    <div className="font-medium text-gray-800 mb-1">{subCategory}</div>
-                                                    <div className="flex flex-col gap-1 ml-2">
+                                                    {subCategory &&
+                                                        <div className="font-medium text-gray-800 mb-1">{subCategory}</div>
+                                                    }
+                                                    <div className="flex flex-col gap-1">
                                                         {Object.entries(subSubs).map(([subSubCategory, count]) => {
                                                             const isSelected =
                                                                 selectedFilter?.category === category &&
