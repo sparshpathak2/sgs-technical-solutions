@@ -156,19 +156,26 @@ export default function Home() {
       <HeroCarousel />
 
       {/* Produts Section */}
-      <div className="flex w-full items-center justify-center py-20 px-2 md:px-28">
+      <div className="flex w-full items-center justify-center py-12 sm:py-20 px-4 md:px-28">
 
-        <div className="flex flex-col gap-6 max-w-7xl">
-          <div className="flex w-full justify-between">
-            <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6 max-w-7xl w-full">
+          <div className="flex flex-col sm:flex-row w-full justify-between gap-4">
+            <div className="flex flex-col gap-4 w-full">
               <div className="text-red-500 text-md">PRODUCTS</div>
               <div className={`${libre.className} font-semibold text-2xl md:text-3xl`}>We Value Quality, Admire <br /> Sustainability, Embrace Innovation.</div>
             </div>
 
-            <a href="/products" className="group flex gap-2 items-center border-1 bg-red-500 hover:bg-red-600 text-white w-fit h-fit px-4 py-2">
-              <div className="text-sm">Read More</div>
-              <ArrowUpRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" />
+            <a
+              href="/products"
+              className="group flex gap-2 items-center bg-red-500 hover:bg-red-600 text-white px-4 py-2 whitespace-nowrap self-start"
+            >
+              <span className="text-sm">See More</span>
+              <ArrowUpRight
+                size={20}
+                className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
             </a>
+
 
           </div>
 
@@ -204,7 +211,7 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      <div className="flex w-full justify-center bg-white px-4 py-8 sm:py-20 sm:px-28">
+      <div className="flex w-full justify-center bg-white px-4 py-12 sm:py-20 sm:px-28">
         <div className="flex flex-col sm:flex-row items-stretch gap-4 sm:gap-0 max-w-7xl">
 
           {/* LEFT SECTION */}
@@ -264,7 +271,7 @@ export default function Home() {
 
       {/* Features Section */}
       {/* <div className="flex flex-col px-4 py-8 sm:py-20 sm:px-28 gap-4 sm:gap-10"> */}
-      <div className="flex w-full items-center justify-center py-20 px-4 md:px-28">
+      <div className="flex w-full items-center justify-center py-12 sm:py-20 px-4 sm:px-28">
 
         <div className="flex flex-col gap-6 max-w-7xl">
 
@@ -303,23 +310,23 @@ export default function Home() {
       </div>
 
       {/* How it works? */}
-      <div className="flex w-full items-center justify-center py-20 px-2 md:px-28 bg-white">
+      <div className="flex w-full items-center justify-center py-12 sm:py-20 px-4 md:px-28 bg-white">
 
-        <div className="flex gap-6 sm:gap-10 max-w-7xl">
+        <div className="flex gap-6 sm:gap-10 max-w-7xl flex-col sm:flex-row">
 
-          <div className="flex w-1/2 flex-col gap-12">
+          <div className="flex w-full sm:w-1/2 flex-col gap-6">
             <div className="flex flex-col gap-4">
               <div className="text-red-500 text-md">HOW IT WORKS?</div>
               <div className={`${libre.className} font-semibold text-2xl md:text-3xl`}>Installation, warrantyservice and customer support.</div>
             </div>
 
-            <a href="/features" className="group flex gap-2 items-center border-1 bg-red-500 hover:bg-red-600 text-white w-fit h-fit px-4 py-2">
+            <a href="/" className="group flex gap-2 items-center border-1 bg-red-500 hover:bg-red-600 text-white w-fit h-fit px-4 py-2">
               <div className="text-sm">Read More</div>
               <ArrowUpRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
           </div>
 
-          <div className="flex w-1/2 flex-col gap-2">
+          <div className="flex w-full sm:w-1/2 flex-col gap-2">
             {/* 1 */}
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-center w-12 h-12 bg-red-200 rounded-full">
@@ -380,14 +387,8 @@ export default function Home() {
       </div>
 
       {/* Testimonials Section */}
-      <div className="flex w-full items-center justify-center py-20 px-2 md:px-28 bg-white">
-        <div className="flex flex-col gap-12 max-w-7xl">
-          <div className="flex flex-col gap-2 text-center">
-            <h2 className={`${libre.className} font-semibold text-2xl md:text-3xl`}>Testimonials</h2>
-            <div>Don't just take our word for it — hear it from our customers!</div>
-          </div>
-          <Testimonials />
-        </div>
+      <div className="w-full px-4 py-12 sm:px-16 sm:py-24 bg-white">
+        <Testimonials />
       </div>
 
       {/* CTA Section */}
@@ -403,9 +404,9 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className="flex w-full items-center justify-center py-20 px-2 md:px-28 bg-red-500">
+      <div className="flex w-full items-center justify-center py-8 sm:py-20 px-2 md:px-28 bg-red-500">
 
-        <div className="flex gap-6 w-full max-w-7xl justify-between">
+        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-7xl sm:justify-between items-center">
           <div className={`${libre.className} font-semibold text-2xl md:text-3xl text-red-50`}>Let's Work Together!</div>
 
           <a href="/contact-us" className="group flex gap-2 items-center border-1 border-white text-white hover:text-white w-fit h-fit px-4 py-2">
@@ -417,7 +418,7 @@ export default function Home() {
 
       {/* WhatsApp Chatbot */}
       <a
-        href="https://wa.me/919990057744"
+        href="https://wa.me/919876543210"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50"

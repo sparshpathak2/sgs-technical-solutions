@@ -1,4 +1,7 @@
+import { Libre_Baskerville } from 'next/font/google';
 import React from 'react'
+
+const libre = Libre_Baskerville({ subsets: ["latin"], weight: ["400", "700"] });
 
 const testimonials = [
     {
@@ -20,10 +23,10 @@ export default function Testimonials() {
         <>
             <div className='flex flex-col gap-8 w-full'>
 
-                {/* <div className='flex flex-col gap-1'>
-                    <h2 className='w-full text-3xl text-center font-semibold'>Testimonials</h2>
+                <div className='flex flex-col items-center gap-1'>
+                    <h2 className={`${libre.className} font-semibold text-2xl md:text-3xl`}>Testimonials</h2>
                     <div className='text-center'>Don't just take our word for it — hear it from our customers!</div>
-                </div> */}
+                </div>
 
                 <div className='hidden sm:flex justify-between gap-16 w-full over-x-hidden'>
 
