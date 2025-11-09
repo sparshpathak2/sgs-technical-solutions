@@ -25,7 +25,7 @@ export default function page() {
                     <div className='text-xl sm:text-2xl font-semibold'>About Us</div>
                     <div className='flex gap-2 items-center'>
                         <a href="/">
-                            <div className='text-sm text-blue-600 hover:text-blue-800'>Home</div>
+                            <div className='text-sm text-red-500 hover:text-text-600'>Home</div>
                         </a>
                         <div className='text-sm'>/</div>
                         <div className='text-sm'>About Us</div>
@@ -70,7 +70,7 @@ export default function page() {
                                     </div>
 
                                     {/* <Button className='w-fit'>Contact Us</Button> */}
-                                    <a href="/contact-us" className="group flex gap-2 items-center border-1 bg-blue-600 hover:bg-blue-800 text-white w-fit h-fit px-4 py-3">
+                                    <a href="/contact-us" className="group flex gap-2 items-center border-1 bg-red-500 hover:bg-red-600 text-white w-fit h-fit px-4 py-3">
                                         <div className="text-sm">Contact Us</div>
                                         <ArrowUpRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" />
                                     </a>
@@ -84,19 +84,16 @@ export default function page() {
                                     SGS Technical Solutions – Engineering Excellence, Delivered with Precision
                                 </div>
                                 <div>
-                                    Founded in 2010, SGS Technical Solutions is a trusted name in providing end-to-end engineering, staffing, and technical support services across diverse industries. With a strong focus on innovation and quality, we help businesses achieve operational efficiency through skilled manpower, advanced solutions, and reliable project execution.
+                                    Established in 2010, SGS Technical Solutions has emerged as a trusted leader in providing high-quality fire-rated doors, panels, partitions, and modular space solutions for commercial, industrial, and institutional projects. With a strong commitment to safety, innovation, and precision, we deliver solutions that protect lives, enhance operational efficiency, and elevate interior spaces.
                                 </div>
                                 <div>
-                                    Over the years, we have successfully partnered with leading organizations across manufacturing, oil & gas, construction, and energy sectors. Our extensive network of technical experts and engineers enables us to deliver tailored solutions that meet the unique needs of every client and project.
+                                    Over the years, we have partnered with leading organizations across construction, healthcare, corporate, and industrial sectors, providing tailored solutions that meet both functional and regulatory requirements. Our expertise spans installation, customization, and maintenance of fire-rated structures, ensuring compliance with the highest safety standards.
                                 </div>
                                 <div>
-                                    At SGS Technical Solutions, we believe that success is built on a foundation of trust, transparency, and technical excellence. Our customer-centric approach ensures that every engagement is handled with utmost professionalism, safety, and commitment to timely delivery.
+                                    At SGS Technical Solutions, we believe excellence is achieved through a blend of technical expertise, meticulous execution, and customer-centric service. Our team of skilled engineers, technicians, and project managers brings in-depth knowledge, hands-on experience, and dedication to every project, ensuring timely delivery without compromising quality.
                                 </div>
                                 <div>
-                                    Our greatest strength lies in our people—qualified engineers, technicians, and project managers who bring deep domain expertise and a passion for problem-solving to every assignment. Together, we strive to exceed expectations and set new standards in service quality and performance.
-                                </div>
-                                <div>
-                                    Whether it’s workforce solutions, project outsourcing, or on-site technical support, SGS Technical Solutions stands as a dependable partner dedicated to powering progress and building long-term relationships through excellence and integrity.
+                                    Our vision is to create safer, smarter, and more flexible spaces. From concept to installation, SGS Technical Solutions stands as a dependable partner, committed to protecting assets, optimizing environments, and building long-term relationships through trust, integrity, and exceptional service.
                                 </div>
                             </div>
 
@@ -129,7 +126,7 @@ export default function page() {
                                 </div>
 
                                 {/* <Button className='w-fit'>Contact Us</Button> */}
-                                <a href="/contact-us" className="group flex gap-2 items-center border-1 bg-blue-600 hover:bg-blue-800 text-white w-fit h-fit px-4 py-3">
+                                <a href="/contact-us" className="group flex gap-2 items-center border-1 bg-red-500 hover:bg-red-600 text-white w-fit h-fit px-4 py-3">
                                     <div className="text-sm">Contact Us</div>
                                     <ArrowUpRight size={20} className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" />
                                 </a>

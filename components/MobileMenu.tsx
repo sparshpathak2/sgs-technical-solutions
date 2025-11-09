@@ -9,7 +9,10 @@ import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandYout
 const MobileMenu = () => {
     const [open, setOpen] = useState(false);
     const [corporateOpen, setCorporateOpen] = useState(false);
-    const [newCarsOpen, setNewCarsOpen] = useState(false);
+    const [productsOpen, setProductsOpen] = useState(false);
+    const [fireDoorsOpen, setFireDoorsOpen] = useState(false);
+    const [panelsOpen, setPanelsOpen] = useState(false);
+    const [modularOpen, setModularOpen] = useState(false);
     const pathname = usePathname();
 
     const isActive = (href: string) => pathname === href;
@@ -49,76 +52,76 @@ const MobileMenu = () => {
                     style={{ height: 'calc(100vh - 4.5rem)' }} // 4.5rem = h-18 = 72px
                 >
                     <div className='flex flex-col w-full'>
-                        <div className="border-b border-gray-200">
+                        {/* <div className="border-b border-gray-200"> */}
+                        <div className="">
                             <button
-                                onClick={() => setNewCarsOpen(!newCarsOpen)}
-                                className="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center"
+                                onClick={() => setProductsOpen(!productsOpen)}
+                                className="w-full text-left px-4 py-3 hover:bg-gray-100 flex justify-between items-center border-b border-gray-200"
                             >
                                 <span>Products</span>
                                 <ChevronDown
-                                    className={`w-4 h-4 transition-transform ${newCarsOpen ? 'rotate-180' : ''
+                                    className={`w-4 h-4 transition-transform ${productsOpen ? 'rotate-180' : ''
                                         }`}
                                 />
                             </button>
 
-                            {newCarsOpen && (
-                                <div className="bg-gray-50">
-                                    <Link
-                                        href="/modular-cleanroom-partitions"
-                                        className="block pl-6 py-2 border-y border-gray-200 hover:bg-gray-100"
-                                        onClick={() => setOpen(false)}
+                            {productsOpen && (
+                                <div className="bg-white">
+                                    {/* Fire Rated Doors */}
+                                    <button
+                                        onClick={() => setFireDoorsOpen(!fireDoorsOpen)}
+                                        className="w-full text-left pl-6 pr-4 py-2 flex justify-between items-center hover:bg-gray-100 border-b border-gray-200"
                                     >
-                                        Modular Cleanroom Partitions
-                                    </Link>
-                                    <Link
-                                        href="/metal-doorsets"
-                                        className="block pl-6 py-2 border-b border-gray-200 hover:bg-gray-100"
-                                        onClick={() => setOpen(false)}
+                                        Fire Rated Doors
+                                        <ChevronDown className={`w-4 h-4 transition-transform ${fireDoorsOpen ? 'rotate-180' : ''}`} />
+                                    </button>
+                                    {fireDoorsOpen && (
+                                        <div className="flex flex-col bg-gray-50 hover:bg-gray-100">
+                                            <div className='pl-6 pr-4 py-2 text-gray-500 border-b border-gray-200 italic font-semibold'>Wooden</div>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Laminate" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Laminate</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Veneer" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Veneer</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Paint Finish</Link>
+
+                                            <div className='pl-6 pr-4 py-2 text-gray-500 border-b border-gray-200 italic font-semibold'>Steel</div>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockhool+Doors" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Rockhool Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Puff+Doors" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Puff Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Honeycomb+Pressed+Steel" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Honeycomb Pressed Steel</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Single+Glazed" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Single Glazed</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Double+Glazed" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Double Glazed</Link>
+                                        </div>
+                                    )}
+
+                                    {/* Panels & Partitions */}
+                                    <button
+                                        onClick={() => setPanelsOpen(!panelsOpen)}
+                                        className="w-full text-left pl-6 pr-4 py-2 flex justify-between items-center hover:bg-gray-100 border-b border-gray-200"
                                     >
-                                        Metal Doorsets
-                                    </Link>
-                                    <Link
-                                        href="/cleanroom-equipment"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
+                                        Panels & Partitions
+                                        <ChevronDown className={`w-4 h-4 transition-transform ${panelsOpen ? 'rotate-180' : ''}`} />
+                                    </button>
+                                    {panelsOpen && (
+                                        <div className="flex flex-col bg-gray-50 hover:bg-gray-100">
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Cleanroom+Partitions" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Cleanroom Partitions</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Lab+Furniture" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Lab Furniture</Link>
+                                            <Link href="/products?category=Panels+%26+Partitions&subCategory=&subSubCategory=Office+Partitions" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Office Partitions</Link>
+                                        </div>
+                                    )}
+
+                                    {/* Modular Spaces */}
+                                    <button
+                                        onClick={() => setModularOpen(!modularOpen)}
+                                        className="w-full text-left pl-6 pr-4 py-2 flex justify-between items-center hover:bg-gray-100 border-b border-gray-200"
                                     >
-                                        Cleanroom Equipment
-                                    </Link>
-                                    <Link
-                                        href="/office-partitions"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Office Partitions
-                                    </Link>
-                                    <Link
-                                        href="/lab-furniture"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Lab Furniture
-                                    </Link>
-                                    <Link
-                                        href="/modular-kitchens"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Modular Kitchens
-                                    </Link>
-                                    <Link
-                                        href="//modular-wardrobe-furniture"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Modular Wardrobe Furniture
-                                    </Link>
-                                    <Link
-                                        href="/fire-doors"
-                                        className="block pl-6 py-2"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Fire Doors
-                                    </Link>
+                                        Modular Spaces
+                                        <ChevronDown className={`w-4 h-4 transition-transform ${modularOpen ? 'rotate-180' : ''}`} />
+                                    </button>
+                                    {modularOpen && (
+                                        <div className="flex flex-col bg-gray-50 hover:bg-gray-100">
+                                            <Link href="/products" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Kitchens</Link>
+                                            <Link href="/products" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Wardrobes</Link>
+                                            <Link href="/products" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Bathrooms</Link>
+                                        </div>
+                                    )}
                                 </div>
                             )}
                         </div>
@@ -177,19 +180,19 @@ const MobileMenu = () => {
 
                     <div className='flex flex-col gap-8 h-full p-4'>
                         <div className='flex flex-col gap-1'>
-                            <div className='italic'>CONTACT DETAILS</div>
+                            <div className='font-semibold text-gray-500'>CONTACT DETAILS</div>
                             <div className='flex gap-2 items-center'>
                                 <Phone size={16} className='text-red-500' />
                                 {/* <div>+91 9990057744</div> */}
-                                <a href="tel:+919990057744" target="_blank" className="font-semibold text-red-500 underline">
-                                    +91 9990057744
+                                <a href="tel:+919876543210" target="_blank" className="font-semibold underline">
+                                    +91 9876543210
                                 </a>
                             </div>
                             <div className='flex gap-2 items-center'>
                                 <Mail size={16} className='text-red-500' />
                                 {/* <div>contactus@vipulmotors.com</div> */}
-                                <a href="mailto:contactus@vipulmotors.com" target="_blank" className="font-semibold text-red-500 underline">
-                                    contactus@vipulmotors.com
+                                <a href="mailto:contactus@sgs.com" target="_blank" className="font-semibold underline">
+                                    contactus@sgs.com
                                 </a>
                             </div>
                             {/* <div className='flex gap-2 items-center'>
@@ -199,10 +202,50 @@ const MobileMenu = () => {
                         </div>
 
                         <div className='flex gap-3 items-center text-red-500'>
-                            <a href="https://www.instagram.com/vipulmotorspvtltd?igsh=MXMxNGJhdnE3dDV3bw%3D%3D&utm_source=qr"><IconBrandInstagram size={28} /></a>
-                            <a href="https://www.facebook.com/profile.php?id=100094960847061"><IconBrandFacebook size={28} /></a>
-                            <a href="https://www.youtube.com/@vipulmotors8585"><IconBrandYoutube size={28} /></a>
-                            <a href="https://www.linkedin.com/company/vipul-motors-privet-limited/?viewAsMember=true"><IconBrandLinkedin size={28} /></a>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/instagram-icon.svg"
+                                    alt="Instagram"
+                                    className="w-6 h-6"
+                                />
+                            </a><a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/facebook-icon.svg"
+                                    alt="Facebook"
+                                    className="w-6 h-6"
+                                />
+                            </a>
+                            <a
+                                href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/youtube-icon.svg"
+                                    alt="YouTube"
+                                    className="w-6 h-6"
+                                />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="/linkedin-icon.svg"
+                                    alt="LinkedIn"
+                                    className="w-6 h-6"
+                                />
+                            </a>
+
                         </div>
                     </div>
 

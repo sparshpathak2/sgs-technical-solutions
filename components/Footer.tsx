@@ -32,7 +32,7 @@ export default function Footer() {
                         </div>
                         <div className="flex gap-4">
                             <a
-                                href="https://www.instagram.com/vipulmotorspvtltd?igsh=MXMxNGJhdnE3dDV3bw%3D%3D&utm_source=qr"
+                                href="https://www.instagram.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -43,7 +43,7 @@ export default function Footer() {
                                 />
                             </a>
                             <a
-                                href="https://www.facebook.com/profile.php?id=100094960847061"
+                                href="https://www.facebook.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -54,7 +54,7 @@ export default function Footer() {
                                 />
                             </a>
                             <a
-                                href="https://www.youtube.com/@vipulmotors8585"
+                                href="https://www.youtube.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -65,7 +65,7 @@ export default function Footer() {
                                 />
                             </a>
                             <a
-                                href="https://www.linkedin.com/company/vipul-motors-privet-limited/?viewAsMember=true"
+                                href="https://www.linkedin.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

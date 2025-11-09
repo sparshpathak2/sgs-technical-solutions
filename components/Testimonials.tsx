@@ -5,16 +5,16 @@ const libre = Libre_Baskerville({ subsets: ["latin"], weight: ["400", "700"] });
 
 const testimonials = [
     {
-        name: 'Pankaj Singh',
-        text: `Today I bought IGNIS delta from vipul motors. My sales representatives Akash chauhan & Nisha jha gave me great deal. They are reliable, honest and operate with integrity. I recommend them to anyone who is looking for some great mechanics & great deal. Akash did my all paper works very smoothly. He always takes the time to answer any questions I may have, and provides me with all the options available. It was a great experience with them. Thanks guys 😊 💓`,
+        name: 'Ravi Sharma',
+        text: `We hired SGS technical solutions for installing fire-rated doors and partitions in our office complex. The team was professional, efficient, and ensured everything met safety standards. The quality of work exceeded our expectations, and the project was completed on time. Highly recommended!`,
     },
     {
-        name: 'Anju Kumari',
-        text: `Aman is very good guy, he delivered my vehicle at very urgent basis, I am so happy with Aman Saxena also I am happy with Nexa Vipul Motors Sec-63, Service.`,
+        name: 'Sunil Kumar',
+        text: `The modular spaces and fire-rated panels provided by SGS Technical Solutions transformed our workspace. The installation was seamless, and the team guided us in selecting the right solutions for both safety and aesthetics. Their attention to detail and commitment to quality is commendable.`,
     },
     {
-        name: 'Ashish Vind',
-        text: `Thnqu so much for such generous time at nexa , this was a great experience for me to have my car delivered in 24hrs and get all the services to the best. Mr Hussain has been the face of excellence to us , my feedback cannot justify how delightful i am . I just wish this diwali 🍟 bring happiness to nexa family. A big thanks and happy diwali.`,
+        name: 'Ashish Singh',
+        text: `We worked with SGS to upgrade our manufacturing facility with fire-rated doors and partitions. From consultation to execution, they were thorough and knowledgeable. The installations are sturdy, compliant with all safety regulations, and have significantly improved our facility’s safety standards.`,
     },
 ];
 
