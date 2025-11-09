@@ -244,20 +244,14 @@ export default function Home() {
           {/* RIGHT SECTION */}
           <div className="flex w-full sm:w-1/2 flex-col gap-4 sm:px-12 justify-between">
             <div className="flex flex-col gap-3 text-gray-700 leading-relaxed">
-              <p>Vipul Motors – Driven by Trust, Defined by Service.</p>
+              <p>SGS Technical Solutions – Safeguarding Spaces with Innovation and Precision</p>
 
               <p>
-                Established in 1987, Vipul Motors is a leading and trusted dealership of Maruti Suzuki,
-                known for delivering outstanding customer experiences across every touchpoint. With a legacy
-                of over three decades, we have built our reputation on the pillars of honesty, commitment,
-                and customer-first thinking.
+                Established in 2010, SGS Technical Solutions is a trusted provider of high-quality fire-rated doors, panels, partitions, and modular space solutions for commercial, industrial, and institutional projects. With a strong focus on safety, innovation, and precision, we deliver solutions that protect lives, enhance operational efficiency, and elevate interior spaces. Our expertise spans installation, customization, and maintenance, ensuring compliance with the highest safety standards.
               </p>
 
               <p>
-                Our growing footprint includes 19 showrooms and 30 workshops strategically located across
-                Delhi, Noida, Gurgaon, Faridabad, Jaipur, Dausa, and Bikaner. We proudly represent the full
-                Maruti Suzuki portfolio—Arena, Nexa, True Value, and Service—ensuring that every customer
-                finds the right car and continued care throughout their ownership journey.
+                Over the years, we have partnered with leading organizations across construction, healthcare, corporate, and industrial sectors, providing tailored solutions to meet functional and regulatory requirements. Our skilled team of engineers, technicians, and project managers combines technical expertise, hands-on experience, and dedication to ensure timely, high-quality project execution. SGS Technical Solutions is committed to creating safer, smarter, and more flexible spaces while building long-term relationships through trust, integrity, and exceptional service.
               </p>
             </div>
 
