@@ -80,21 +80,81 @@ export default function page() {
                             </div>
 
                             <div className="w-full sm:w-2/3 flex flex-col gap-2">
-                                <div>
-                                    SGS Technical Solutions – Engineering Excellence, Delivered with Precision
-                                </div>
-                                <div>
-                                    Established in 2010, SGS Technical Solutions has emerged as a trusted leader in providing high-quality fire-rated doors, panels, partitions, and modular space solutions for commercial, industrial, and institutional projects. With a strong commitment to safety, innovation, and precision, we deliver solutions that protect lives, enhance operational efficiency, and elevate interior spaces.
-                                </div>
-                                <div>
-                                    Over the years, we have partnered with leading organizations across construction, healthcare, corporate, and industrial sectors, providing tailored solutions that meet both functional and regulatory requirements. Our expertise spans installation, customization, and maintenance of fire-rated structures, ensuring compliance with the highest safety standards.
-                                </div>
-                                <div>
+                                <p>
+                                    SGS Technical Solutions is a dynamic and innovation-driven manufacturing enterprise delivering precision-engineered solutions across modular kitchens (wooden & stainless steel), fire safety, cleanroom equipment, electrical panels, and insulation systems. Built on a foundation of quality craftsmanship, stringent compliance standards, and customer-centric service, we strive to set new benchmarks in safety, durability, and performance for industrial, commercial, and residential infrastructure.
+                                </p>
+                                <p>
+                                    Led by a team of seasoned industry professionals, SGS Technical Solutions combines advanced manufacturing capabilities with deep technical expertise to ensure robust product development, timely project execution, and unmatched service reliability.
+                                </p>
+                                <p>
                                     At SGS Technical Solutions, we believe excellence is achieved through a blend of technical expertise, meticulous execution, and customer-centric service. Our team of skilled engineers, technicians, and project managers brings in-depth knowledge, hands-on experience, and dedication to every project, ensuring timely delivery without compromising quality.
-                                </div>
-                                <div>
-                                    Our vision is to create safer, smarter, and more flexible spaces. From concept to installation, SGS Technical Solutions stands as a dependable partner, committed to protecting assets, optimizing environments, and building long-term relationships through trust, integrity, and exceptional service.
-                                </div>
+                                </p>
+                                <p className="font-semibold mt-2">Our Core Values</p>
+
+                                <ol className="list-decimal list-inside">
+                                    <li>Innovation & Quality</li>
+                                    <li>Timely Delivery & Reliability</li>
+                                    <li>Safety & Compliance</li>
+                                    <li>Customer Satisfaction & Transparency</li>
+                                </ol>
+
+                                <h3 className='text-2xl mt-2 font-bold'>Our Divisions & Offerings</h3>
+
+                                <p>Kitchen Division (Residential & Commercial – Wooden & Stainless Steel)</p>
+                                <p>We design and manufacture high-performance kitchen solutions tailored for homes, restaurants, hotels, industrial canteens, and large commercial setups.</p>
+
+                                <p className="font-semibold mt-2">Residential Modular Kitchens</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>Premium Wooden Modular Kitchens</li>
+                                    <li>Stainless Steel Modular Kitchens</li>
+                                    <li>Custom Cabinets, Shutters & Storage Systems</li>
+                                    <li>Elegant Countertop & Backsplash Solutions</li>
+                                    <li>Soft-close Hardware, Accessories & Functional Modular Systems</li>
+                                </ol>
+
+                                <p className="font-semibold mt-2">Commercial Kitchens</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>Stainless-Steel Commercial Kitchen Fabrication</li>
+                                    <li>Worktables, Sinks, Storage Racks & Shelving</li>
+                                    <li>Exhaust Hoods, Ducting & Ventilation Systems</li>
+                                    <li>Customized Cooking Range Bases, Prep Counters & Dishwashing Units</li>
+                                    <li>Hygienic, durable and industry-grade kitchen installations</li>
+                                </ol>
+
+                                <p className="font-semibold mt-2">Fire Safety Division</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>Fire Rated Doors (Single/Double Leaf, Shaft Doors, Emergency Exits)</li>
+                                    <li>Fire Rated Glazed Doors</li>
+                                    <li>Pressed Steel Doors</li>
+                                </ol>
+
+                                <p className="font-semibold mt-2">Cleanroom Solutions Division</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>Cleanroom Doors (PUF Insulated, Sliding, Hermetically Sealed)</li>
+                                    <li>Cleanroom Equipment (Pass Boxes, Laminar Air Flow Units, Bio Safety Cabinets, Air Showers)</li>
+                                </ol>
+
+                                <p className="font-semibold mt-2">Electrical Panels Division</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>LT Panels, MDP, SDP, MCC Panels</li>
+                                    <li>APFC Panels, Synchronization Panels, Customized Control Panels</li>
+                                </ol>
+
+                                <p className="font-semibold mt-2">Insulated Panels Division</p>
+                                <ol className="list-decimal list-inside">
+                                    <li>PUF Wall, Roof & Partition Panels</li>
+                                    <li>Rockwool / Mineral Wool Panels for Thermal & Acoustic Insulation</li>
+                                </ol>
+
+                                <h3 className='text-2xl mt-2 font-bold'>Our Divisions & Offerings</h3>
+
+                                <ol className="list-decimal list-inside">
+                                    <li>State-of-the-art Manufacturing Facilities</li>
+                                    <li>Experienced Technical & Design Team</li>
+                                    <li>Compliance with IS/EN/BS Fire Standards, NABL Testing & GMP Guidelines</li>
+                                    <li>Turnkey Project Capabilities & Custom Engineering Solutions</li>
+                                    <li>Comprehensive After-Sales Support</li>
+                                </ol>
                             </div>
 
 

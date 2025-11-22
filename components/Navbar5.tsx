@@ -86,7 +86,7 @@ export default function Navbar() {
                                     <DropdownMenuLabel className='font-bold'>Steel</DropdownMenuLabel>
                                     <DropdownMenuGroup>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockhool+Doors">Rockhool Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockwool+Doors">Rockwool Doors</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
                                             <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Puff+Doors">Puff Doors</Link>

@@ -61,8 +61,8 @@ export default function page() {
                                     <div className='py-1'>
                                         <Mail size={16} />
                                     </div>
-                                    <a href="mailto:contactus@sgs.com" target="_blank" className="font-semibold text-red-500 underline">
-                                        contactus@sgs.com
+                                    <a href="mailto:sales@sgstechnicalsolutions.com" target="_blank" className="font-semibold text-red-500 underline">
+                                        sales@sgstechnicalsolutions.com
                                     </a>
                                 </div>
                             </div>
@@ -75,8 +75,8 @@ export default function page() {
                                         <Phone size={16} />
                                     </div>
                                     <div className='flex flex-col gap-1'>
-                                        <a href="tel:+919876543210" target="_blank" className="font-semibold text-red-500 underline">
-                                            +91 9876543210
+                                        <a href="tel:+919050725050" target="_blank" className="font-semibold text-red-500 underline">
+                                            +91 9050725050
                                         </a>
                                         <div>Mon-Sat from 9 AM to 8 PM</div>
                                     </div>

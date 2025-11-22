@@ -83,7 +83,7 @@ const MobileMenu = () => {
                                             <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Paint+Finish" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Paint Finish</Link>
 
                                             <div className='pl-6 pr-4 py-2 text-gray-500 border-b border-gray-200 italic font-semibold'>Steel</div>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockhool+Doors" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Rockhool Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockwool+Doors" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Rockwool Doors</Link>
                                             <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Puff+Doors" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Puff Doors</Link>
                                             <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Honeycomb+Pressed+Steel" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Honeycomb Pressed Steel</Link>
                                             <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Single+Glazed" className="py-1.5 pl-6 border-b border-gray-200" onClick={() => setOpen(false)}>Single Glazed</Link>
@@ -184,15 +184,15 @@ const MobileMenu = () => {
                             <div className='flex gap-2 items-center'>
                                 <Phone size={16} className='text-red-500' />
                                 {/* <div>+91 9990057744</div> */}
-                                <a href="tel:+919876543210" target="_blank" className="font-semibold underline">
-                                    +91 9876543210
+                                <a href="tel:+919050725050" target="_blank" className="font-semibold underline">
+                                    +91 9050725050
                                 </a>
                             </div>
                             <div className='flex gap-2 items-center'>
                                 <Mail size={16} className='text-red-500' />
                                 {/* <div>contactus@vipulmotors.com</div> */}
-                                <a href="mailto:contactus@sgs.com" target="_blank" className="font-semibold underline">
-                                    contactus@sgs.com
+                                <a href="mailto:sales@sgstechnicalsolutions.com" target="_blank" className="font-semibold underline">
+                                    sales@sgstechnicalsolutions.com
                                 </a>
                             </div>
                             {/* <div className='flex gap-2 items-center'>

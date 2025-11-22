@@ -244,14 +244,14 @@ export default function Home() {
           {/* RIGHT SECTION */}
           <div className="flex w-full sm:w-1/2 flex-col gap-4 sm:px-12 justify-between">
             <div className="flex flex-col gap-3 text-gray-700 leading-relaxed">
-              <p>SGS Technical Solutions – Safeguarding Spaces with Innovation and Precision</p>
-
               <p>
-                Established in 2010, SGS Technical Solutions is a trusted provider of high-quality fire-rated doors, panels, partitions, and modular space solutions for commercial, industrial, and institutional projects. With a strong focus on safety, innovation, and precision, we deliver solutions that protect lives, enhance operational efficiency, and elevate interior spaces. Our expertise spans installation, customization, and maintenance, ensuring compliance with the highest safety standards.
+                SGS Technical Solutions is a dynamic and innovation-driven manufacturing enterprise delivering precision-engineered solutions across modular kitchens (wooden & stainless steel), fire safety, cleanroom equipment, electrical panels, and insulation systems. Built on a foundation of quality craftsmanship, stringent compliance standards, and customer-centric service, we strive to set new benchmarks in safety, durability, and performance for industrial, commercial, and residential infrastructure.
               </p>
-
               <p>
-                Over the years, we have partnered with leading organizations across construction, healthcare, corporate, and industrial sectors, providing tailored solutions to meet functional and regulatory requirements. Our skilled team of engineers, technicians, and project managers combines technical expertise, hands-on experience, and dedication to ensure timely, high-quality project execution. SGS Technical Solutions is committed to creating safer, smarter, and more flexible spaces while building long-term relationships through trust, integrity, and exceptional service.
+                Led by a team of seasoned industry professionals, SGS Technical Solutions combines advanced manufacturing capabilities with deep technical expertise to ensure robust product development, timely project execution, and unmatched service reliability.
+              </p>
+              <p>
+                At SGS Technical Solutions, we believe excellence is achieved through a blend of technical expertise, meticulous execution, and customer-centric service. Our team of skilled engineers, technicians, and project managers brings in-depth knowledge, hands-on experience, and dedication to every project, ensuring timely delivery without compromising quality.
               </p>
             </div>
 
@@ -369,21 +369,19 @@ export default function Home() {
       </div>
 
       {/* FAQs Section */}
-      <div className="flex flex-col w-full text-center px-4 sm:px-16 py-12 sm:py-24 gap-8">
+      {/* <div className="flex flex-col w-full text-center px-4 sm:px-16 py-12 sm:py-24 gap-8">
         <div className="flex flex-col gap-2 items-center justify-center">
-          {/* <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2> */}
           <h2 className={`${libre.className} font-semibold text-2xl md:text-3xl`}>
             Frequently Asked Questions
           </h2>
-          {/* <div>We promise you the best of our service.</div> */}
         </div>
         <FAQs />
-      </div>
+      </div> */}
 
       {/* Testimonials Section */}
-      <div className="w-full px-4 py-12 sm:px-16 sm:py-24 bg-white">
+      {/* <div className="w-full px-4 py-12 sm:px-16 sm:py-24 bg-white">
         <Testimonials />
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       {/* <div className="flex w-full items-center justify-center py-20 px-2 md:px-28 bg-red-50">
@@ -412,7 +410,7 @@ export default function Home() {
 
       {/* WhatsApp Chatbot */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919050725050"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50"

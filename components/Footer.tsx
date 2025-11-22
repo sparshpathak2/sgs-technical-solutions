@@ -111,16 +111,16 @@ export default function Footer() {
                                 <div className='py-1'>
                                     <Phone size={16} />
                                 </div>
-                                <a href="tel:+919876543210" target="_blank" className="font-semibold underline">
-                                    +91 9876543210
+                                <a href="tel:+919050725050" target="_blank" className="font-semibold underline">
+                                    +91 9050725050
                                 </a>
                             </div>
                             <div className='flex gap-2 text-sm'>
                                 <div className='py-1'>
                                     <Mail size={16} />
                                 </div>
-                                <a href="mailto:contactus@sgs.com" target="_blank" className="font-semibold underline">
-                                    contactus@sgs.com
+                                <a href="mailto:sales@sgstechnicalsolutions.com" target="_blank" className="font-semibold underline">
+                                    sales@sgstechnicalsolutions.com
                                 </a>
                             </div>
                         </div>
