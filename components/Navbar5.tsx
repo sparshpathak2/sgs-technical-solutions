@@ -86,19 +86,19 @@ export default function Navbar() {
                                     <DropdownMenuLabel className='font-bold'>Steel</DropdownMenuLabel>
                                     <DropdownMenuGroup>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Rockwool+Doors">Rockwool Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Rockwool">Rockwool Doors</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Puff+Doors">Puff Doors</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Puff">Puff Doors</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Honeycomb+Pressed+Steel">Honeycomb Pressed Steel</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Honeycomb">Honeycomb Pressed Steel</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Single+Glazed">Single Glazed</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Single+Glazed">Single Glazed</Link>
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Wooden&subSubCategory=Double+Glazed">Double Glazed</Link>
+                                            <Link href="/products?category=Fire+Rated+Doors&subCategory=Steel&subSubCategory=Double+Glazed">Double Glazed</Link>
                                         </DropdownMenuItem>
                                     </DropdownMenuGroup>
                                 </DropdownMenuSubContent>

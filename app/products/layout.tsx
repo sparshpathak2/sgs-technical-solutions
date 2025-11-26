@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 
-export default function RootLayout({
+export default function ProductsLayout({
     children,
 }: {
     children: React.ReactNode

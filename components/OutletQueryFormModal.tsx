@@ -21,7 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { createQuery } from "@/api/query";
+import { createQuery } from "@/app/api/query";
 import { Textarea } from "./ui/textarea";
 
 interface FormModalProps {

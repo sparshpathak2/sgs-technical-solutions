@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from '../ui/textarea';
-import { createQuery } from '@/api/query';
+import { createQuery } from '@/app/api/query';
 import toast from 'react-hot-toast';
 
 type FormData = {

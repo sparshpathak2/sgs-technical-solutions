@@ -1,6 +1,6 @@
 "use client";
 
-import { getBanners } from "@/api/media";
+import { getBanners } from "@/app/api/media";
 import { Banner } from "@/lib/types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";

@@ -9,13 +9,15 @@ import {
     SelectContent,
     SelectItem,
     SelectValue,
+    SelectGroup,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from '../ui/textarea';
-import { createQuery } from '@/api/query';
+import { createQuery } from '@/app/api/query';
 import { toast } from "react-hot-toast";
+import { products } from '@/lib/data';
 
 type FormData = {
     name: string;
@@ -24,6 +26,7 @@ type FormData = {
     location: string;
     // carModel?: string;
     message: string;
+    product: string;
 };
 
 export default function ContactForm() {
@@ -37,19 +40,38 @@ export default function ContactForm() {
         formState: { errors },
     } = useForm<FormData>();
 
+    const productCategories = [
+        ...new Set(
+            products
+                .map((p) => p.subSubCategory)
+                .filter((item): item is string => Boolean(item))
+        )
+    ];
+
     const onSubmit = async (data: any) => {
         setLoading(true);
         // console.log("data from contact form", data);
 
-        const dataWithSource = {
-            ...data,
-            source: "Contact", // Add source field
-        };
+        // const dataWithSource = {
+        //     ...data,
+        //     source: "Contact", // Add source field
+        // };
 
         try {
-            await createQuery(dataWithSource);
+            // await createQuery(dataWithSource);
+            console.log(data)
             console.log("Query submitted successfully!");
-            reset();
+            // reset();
+
+            // Reset form with default values
+            reset({
+                name: "",
+                email: "",
+                mobile: "",
+                location: "",
+                message: "",
+                product: "",
+            });
 
             toast.success("Your query was submitted successfully!");
         } catch (error) {
@@ -163,6 +185,43 @@ export default function ContactForm() {
                         </p>
                     )}
                 </div> */}
+
+                {/* Products */}
+                <div className="flex flex-col gap-2">
+                    <Label htmlFor="product">Select Product</Label>
+
+                    <Controller
+                        name="product"
+                        control={control}
+                        rules={{ required: "Product is required" }}
+                        render={({ field }) => (
+                            <Select
+                                value={field.value}
+                                onValueChange={field.onChange}
+                            >
+                                <SelectTrigger className="w-full">
+                                    <SelectValue placeholder="Select Product" />
+                                </SelectTrigger>
+
+                                <SelectContent side="bottom" position="popper">
+                                    <SelectGroup>
+                                        {productCategories.map((cat) => (
+                                            <SelectItem key={cat} value={cat}>
+                                                {cat}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectGroup>
+                                </SelectContent>
+                            </Select>
+                        )}
+                    />
+
+                    {errors.product && (
+                        <p className="text-sm text-red-500 mt-1">
+                            {errors.product.message as string}
+                        </p>
+                    )}
+                </div>
 
                 {/* Message */}
                 <div className="flex flex-col gap-2">
