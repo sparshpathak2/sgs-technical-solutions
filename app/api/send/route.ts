@@ -10,9 +10,10 @@ export async function POST(req: NextRequest) {
     const { name, email, mobile, location, product, message } = data;
 
     await resend.emails.send({
-      from: "Test <onboarding@resend.com>",
-      // to: "sales@sgstechnicalsolutions.com",
-      to: "sparshpathak2.0@gmail.com",
+      // from: "Test <onboarding@resend.com>",
+      from: "Query on SGS Technical Solutions <admin@sgstechnicalsolutions.com>",
+      to: "sales@sgstechnicalsolutions.com",
+      // to: "sparshpathak2.0@gmail.com",
       subject: `New Query from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
